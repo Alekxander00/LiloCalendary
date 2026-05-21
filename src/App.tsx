@@ -1071,7 +1071,8 @@ function App() {
   return (
     <div className="relative h-[100svh] overflow-hidden bg-[var(--bg)] text-[var(--text)]">
       {/* Fondo de Luces Ambientales Interactivas */}
-      <div className="ambient-bg-container">
+      {/* Ambient background container placed at top level */}
+        <div className="ambient-bg-container">
         <div className={`ambient-light-orb ambient-light-orb--one ${(isMusicPlaying || isDetectingExternal) ? 'ambient-light-orb--pulsing' : ''}`} />
         <div className={`ambient-light-orb ambient-light-orb--two ${(isMusicPlaying || isDetectingExternal) ? 'ambient-light-orb--pulsing' : ''}`} />
         <div className={`ambient-light-orb ambient-light-orb--three ${(isMusicPlaying || isDetectingExternal) ? 'ambient-light-orb--pulsing' : ''}`} />
